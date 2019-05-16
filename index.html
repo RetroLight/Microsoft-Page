@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Sass</title>
+	<link rel="stylesheet" href="reset/reset.css">	
+	<!----------- Roboto font ------->
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+	<!------------- Barlow condensed font -------->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<img class="first" src="images/bg_figures/first.svg" alt="">
+	<img class="second" src="images/bg_figures/cloud(second).svg" alt="">
+	<img class="third" src="images/bg_figures/square(third).svg" alt="">
+	<img class="fourth" src="images/bg_figures/fourth.svg" alt="">
+	<img src="images/bg_figures/Rectangle.svg" alt="" class="fifth">
+	<div class="container">
+		<header>			
+			<button class="adapt_profile_button">
+				<img src="images/adaptive_icons/profile.png" alt="">
+			</button>
+			<button class="adapt_search_button">
+				<img src="images/adaptive_icons/search_button.png" alt="">
+			</button>			
+			<button class="top-nav_btn" id="adaptive_button">
+				<img src="images/adaptive_icons/menu.svg" alt="">
+			</button>			
+			<ul class="adaptive_menu" id="adaptive_toggle">
+				<img id="cancel_button" src="images/adaptive_icons/cancel_button.png" alt="">
+				<a class="adaptive_menu_USA" href="#"><img src="images/flags/united-states.svg" alt="США">EN</a>
+				<a class="adaptive_menu_AUS" href="#"><img src="images/flags/australia.svg" alt="Австралия">AU</a>				
+				<a href="#">
+					<li class="adaptive_menu__item">Sales: 1 844 611 6871</li>
+				</a>
+				<a href="">
+					<li class="adaptive_menu__item1">About us</li></a>
+				<a href="">
+					<li class="adaptive_menu__item2">Services</li></a>
+				<a href="">
+					<li class="adaptive_menu__item3">Cloud subscriptions</li></a>
+				<a href="">
+					<li class="adaptive_menu__item4">Volume licensing</li></a>
+				<a href="">
+					<li class="adaptive_menu__item5">Hardware</li></a>
+				<a href="">
+					<li class="adaptive_menu__item6">Contact us</li></a>
+				<a href="">
+					<li class="adaptive_menu__item7">Support</li></a>
+				<a href="">
+					<li class="adaptive_menu__item8"><img src="images/header/cart.svg" alt=""></li></a>
+			</ul>			
+			<div class="top-nav">
+				<div class="row no-gutters">
+					<div class="col-lg-2 col-12">
+						<div class="logo">
+							<img src="images/logo/logo (1).svg" alt="Логотип"><br/>
+							<img src="images/logo/logo (1) 2.svg" alt="Майкрософт покупки">
+						</div>
+					</div>
+					<div class="col-md-10">
+						<div class="row no-gutters justify-content-between">
+							<div class="col-md-auto">
+								<div class="top-nav-flags d-inline-flex">
+									<div class="_USA">
+										<img src="images/flags/united-states.svg" alt="США">
+										<div>EN</div>
+									</div>
+									<div class="_AUS">
+										<img src="images/flags/australia.svg" alt="Австралия">
+										<div>AU</div>
+									</div>
+								</div>
+							</div>
+							<!-------- col-md-flags ------>
+							<div class="col-md-auto">
+								<div class="top-header">
+									<ul class="top-header_menu">
+										<li><a href="#">Sales: 1 844 611 6871</a></li>
+										<li><a href="#">About us</a></li>
+										<li><a href="#">Contact us</a></li>
+										<li><a href="#">Support</a></li>
+										<li><a href="#">Login</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row no-gutters bottom-header justify-content-between align-items-center">								
+										<div class="col-md-auto">
+											<div class="bottom-header">
+												<ul class="bottom-header_menu">
+													<li><a href="#">Services</a></li>
+													<li><a href="#">Cloud subscriptions</a></li>
+													<li><a href="#">Hardware</a></li>
+													<li><a href="#">Volume licensing</a></li>
+												</ul>
+																						</div>
+											</div>
+									<div class="col-md-auto">
+										<div class="bottom-header_icons">											
+											<a href="#"><img src="images/header/glass.svg" alt="Значок лупы"></a>
+											<a href="#"><img src="images/header/cart.svg" alt="Значок корзины"></a>
+										</div>
+									</div>								
+								<!-- bottom-header -->							
+						</div>
+					</div>
+					<!------ col-md ---->
+				</div>
+				<!------- main header row ---->
+			</div>
+		</header>
+	
+	<div class ="row">
+		<div class="col-md-3 col-sm-3 col-3">
+			<div class="micro-products">
+				We are Microsoft products Wizards!
+			</div>
+			<div class="arrow_down">
+				<a href="#">
+					<img src="images/arrow.svg" alt="стрелка вниз">
+				</a>
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-9">
+			<div class="features d-md-flex d-sm-flex d-flex flex-wrap">
+
+				<div>
+					<a href="#">
+						<img src="images/rate.svg" alt="">
+						<p>Lowest prices</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<img src="images/support.svg" alt="">
+						<p>Strong customer relationship</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<img class="fast_o" src="images/sands.svg" alt="">
+						<p>Fast order</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<img class="save_and_sec" src="images/group.svg" alt="">
+						<p>Save and secure</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<img src="images/consult.svg" alt="">
+						<p>Online consultation </p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<img src="images/customer.svg" alt="">
+						<p>After-sale support</p>
+					</a>
+				</div>
+			</div>
+			<!-- features -->
+			<div class="how_we_work">
+				That’s how we work!
+			</div>
+		</div>
+		<!-- col-md-8 -->
+	</div>
+	<!------- row for the first block -------->
+
+<div class="row no-gutters cloud_block">			
+			<div class="col-md-6 offset-md-5 col-sm-10">
+				<div class="c_migration">
+					<p class="c_migration_h">Cloud Migration</p>
+					<p class="c_migration_text">We provided Cloud managed support and migration services 
+						since it wasn’t so popular.<br/>
+						We honed our experience on hundreds of successful projects.
+					</p>
+				</div>
+			</div>
+			<!-- col-md-5 -->
+			<div class="col-lg-8 offset-lg-1">
+				<div class="future">
+					<p class="future_h">Building a future</p>
+				</div>
+			</div>
+			<!-- col-md-8 -->
+			<div class="col-lg-6 col-md-12 offset-md-4 col-12 offset-3 offset-lg-6">
+				<div class="second-block_buttons">
+					<a href="" class="btn btn-primary">Migrate to the cloud</a>
+					<a href="" class="btn btn-primary">already in cloud</a>
+				</div>
+			</div>
+</div>
+ <!-- row for the second block no-gutters -->
+ <div class="row no-gutters cloud_subscr">
+ 	<div class="col-md-8">
+ 		<div class="cloud_subscr_text">
+ 			<p class="cloud_subscr_text_h">Cloud sUBSCRIPTIONS</p>
+ 			<p class="cloud_subscr_text_t">jOIN The <span style="color: #455AC8">365</span> cLUB</p>
+ 		</div>
+ 	</div>
+ 	<div class="col-md-9 relative_for_365">
+ 		<div class = "col-3 offset-9 t365">
+ 			365
+ 		</div>
+ 		<div class="cloud_subscr_buttons d-inline-flex flex-wrap">
+ 			<a class="btn"><img class="azure" src="images/logo/azure_logo.svg" alt="Azure"></a>
+ 			<a class="btn"><img src="images/logo/office_logo.svg" alt="Office"></a>
+ 			<a class="btn"><img class="microsoft_dynamics" src="images/logo/microsoft_dynamics.svg" alt="Microsoft Dynamics"></a>
+ 			<a class="btn"><img src="images/logo/microsoft_logo.svg" alt="Microsoft"></a>
+ 		</div>
+ 	</div>
+ </div>
+ <!--------- row for the third Cloud Subscriptions Block ------->
+ <div class="row microsoft_surface">
+ 	<div class="col-lg-7 offset-lg-5 col-md-10 offset-md-6 col-10 offset-3">
+ 		<div class="surface_block_h">
+ 			<p>Microsoft Surface</p>
+ 		</div>
+ 	</div>
+ 	<!-- col-md-6 offset-md-5 -->
+ 	<div class="col-md-auto">
+ 		<img src="images/surface/logo-microsoft-surface-authorized-reseller.svg" alt="" class="surface_logo">
+ 		<img src="images/surface/151.png" alt="" class="surface_pc">
+ 	</div>
+ 	<!-- col-md-auto -->
+ 	<a href="" class="btn btn-primary button_surface">
+ 		Shop now
+ 	</a>
+ </div>
+ <!-- microsoft_surface row -->
+ <div class="row microsoft_license no-gutters">
+ 	<div class="col-lg-8 col-md-8 col-sm-10">
+ 		<p class="microsoft_licenses_h">Microsoft licenses</p>
+ 	</div>
+ 	<div class="col-lg-6 col-7 offset-5 offset-lg-3">
+ 		<p class="microsoft_licenses_t">Choose from a complete list of Microsoft licenses and licensing programs.<br/> 
+		Compare Microsoft Volume licensing programs by terms and prices.
+		</p>
+ 	</div>
+		<div class="col-lg-9 offset-lg-3 col-md-10 offset-md-3 col-9 offset-4">
+			<p class="microsoft_licenses_fade">Increase Productivity</p>
+		</div>
+ 	<div class="col-lg-2 col-2 microsoft_license_button">
+ 		<a href="" class="btn btn-primary">
+ 			Catalog
+ 		</a>
+ </div>
+</div>
+</div>
+	<!------------- container -------------->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 offset-lg-0 col-sm-7 col-10 offset-sm-3">
+				<div class="microsoft_partner">
+					<img src="images/footer/footer_logo.svg" alt="Microsoft Partner">					
+				</div>
+				<p class="microsoft_partner_t">We offer a 100% satisfaction guarantee. If you have questions, our knowledgeable staff can help find the best 
+				software solution for you. </p>
+			</div>
+			<div class="col-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 offset-lg-0">
+				<div class="footer_contacts">
+					<h6 class="footer_contacts_h">Contacts</h6>
+					<p class="footer_contacts_t">3422 Old Capitol Trail Ste.679, Wilmington, DE 19808 
+					<br/> +1-844-611-6871 (toll free) 
+					<br/> info@buymssoft.com </p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-sm-3 offset-sm-3 col-3 offset-lg-1">
+				<div class="footer_questions">
+					<h6 class="footer_questions_h">Questions?</h6>
+					<ul class="footer_questions_list">
+						<a href="">
+							<li>Get Help</li></a>
+						<a href="">
+							<li>Contact Us</li></a>
+						<a href="">
+							<li>Request A Quote</li></a>
+						<a href="">
+							<li>FAQ</li></a>
+					</ul>
+				</div>
+				</div>
+			<div class="col-lg-2 col-sm-2 col-3">
+				<div class="company_info">
+					<h6 class="company_info_h">Company Info</h6>
+					<ul class="company_info_list">
+						<a href="">
+							<li>About Us</li></a>
+						<a href="">
+							<li>Privacy Policy</li></a>
+						<a href="">
+							<li>Return Policies</li></a>
+						<a href="">
+							<li>Remote Support</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- container 2 -->
+</footer>	
+<script>	 
+const navBtn = document.getElementById("adaptive_button");
+const topNav = document.getElementById("adaptive_toggle");
+const cancelButton = document.getElementById("cancel_button")
+navBtn.onclick = function(){
+ topNav.setAttribute("class", "adaptive_menu_click");
+};
+cancelButton.onclick = function() {
+	topNav.removeAttribute("class", "adaptive_menu_click")
+	topNav.setAttribute("class", "adaptive_menu")
+}
+</script>
+</body>
+</html>

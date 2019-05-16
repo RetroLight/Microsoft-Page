@@ -1,0 +1,452 @@
+@import "color"
+@mixin large-text
+	font-family: 'Barlow Condensed', sans-serif
+	font-size: 70px
+	line-height: 80px
+	text-transform: uppercase
+	color: $bigtext
+@mixin little-text
+	color: $textcolor
+	font-family: "Aileron", sans-serif
+	font-size: 16px
+	font-weight: lighter
+@mixin fade-text	
+	font-family: "Aileron", sans-serif
+	font-weight: normal		
+	color: rgba(69, 90, 200, 0.15)
+	font-size: 70px		
+	text-transform: uppercase
+@mixin button_click
+	padding-top: 15px
+	text-align: center
+	z-index: 1
+	display: block
+	position: absolute
+	left: 0
+	top: 0		
+	background-color: $blockcolor	
+	list-style: none
+	font-size: 14px		
+	&_USA, &_AUS		
+		padding: 18px 5px 18px 10px		
+		border-radius: 15px
+	&_USA:hover, &_AUS:hover
+		background-color: lighten($blockcolor, 10%)
+	a
+		color: #fff
+		text-decoration: none		
+	li
+		padding: 15px 55px				
+		color: #fff
+		text-decoration: none
+	li:hover
+		background-color: lighten($blockcolor, 10%)
+
+body
+	position: relative
+
+._USA, ._AUS
+	margin-left: 35px	
+	display: flex
+	padding: 3px 5px 3px 10px
+	img 
+		width: 30px
+
+	div 
+		font-size: 11px
+		padding: 14px 10px
+
+._AUS 
+	margin-left: 0
+
+._USA:hover, ._AUS:hover
+	background-color: $flagshover
+	border-radius: 20px
+
+.logo
+	text-align: center
+	margin-top: 15px
+	img:first-child
+		width: 45.5px		
+	img:last-child
+		width: 160px
+
+.top-header
+	&_menu
+		display: flex
+		list-style: none
+		margin-bottom: 0		
+		li
+			padding: 10px 30px 19px 20px
+			a
+				color: $textcolor
+				font-family: "Aileron", sans-serif
+				font-size: 14px			
+				text-decoration: none		
+		li:hover
+			background-color: $hovercolor
+			a
+				color: #ffffff
+		li:last-child
+			margin-right: 0
+			padding: 10px 30px 15px 30px
+
+.btn:focus, .btn:active
+	outline: none !important
+	box-shadow: none !important
+
+button
+.top-nav_btn
+	z-index: 1
+	width: 80px
+	height: 80px
+	color: #fff
+	display: none	
+	background-color: $blockcolor
+	border: none	
+	position: absolute
+	left: 0px	
+	top: 0px
+	color: #fff
+	outline: none !important
+	box-shadow: none !important
+
+.adaptive_menu
+	&__item6
+		border-top: 1px solid #fff
+	&__item8
+		padding-bottom: 40px !important
+	&_click
+		display: block	
+		@include button_click	
+	padding-top: 15px
+	text-align: center
+	z-index: 2
+	display: none
+	position: absolute
+	left: 0
+	top: 0		
+	background-color: $blockcolor		
+	font-size: 14px		
+	&_USA, &_AUS		
+		padding: 18px 5px 18px 10px		
+		border-radius: 15px
+	&_USA:hover, &_AUS:hover
+		background-color: lighten($blockcolor, 10%)
+	a
+		color: #fff
+		text-decoration: none		
+	li
+		padding: 15px 55px				
+		color: #fff
+		text-decoration: none		
+	// li:last-child
+	// 	padding-bottom: 20px
+	li:hover
+		background-color: lighten($blockcolor, 10%)		
+
+#cancel_button
+	position: absolute
+	width: 20px
+	top: 10px
+	left: 5px
+	cursor: pointer
+
+.adapt_profile_button
+	display: none
+	position: absolute
+	right: 0px
+	top: 0px
+	width: 80px
+	height: 80px
+	background-color: #455AC8
+	border: none
+	z-index: 3	
+	outline: none !important
+	box-shadow: none !important
+
+.adapt_profile_button:active
+	background-color: darken(#455AC8, 10%)
+
+.adapt_search_button
+	display: none
+	position: absolute
+	right: 80px
+	top: 1px
+	width: 78px
+	height: 78px
+	background-color: #fff
+	z-index: 3
+	border: none
+	outline: none !important
+	box-shadow: none !important
+.adapt_search_button:active
+	background-color: darken(#fff, 10%)
+
+.bottom-header
+	background-color: $blockcolor
+	&_icons
+		img 
+			margin-right: 20px
+	&_menu
+		display: flex
+		list-style-type: none
+		margin-bottom: 0
+		li 
+			padding: 10px 46px 10px 46px
+			text-align: center	 
+			a 
+				color: $whitetext
+				text-decoration: none
+				font-family: "Aileron", sans-serif
+				font-size: 13px				
+		li:first-child 
+			padding-left: 45px
+		li:hover 
+			background-color: darken($blockcolor, 10%)
+
+.micro-products		
+	@include large-text
+	margin-top: 60px
+	margin-left: 50px	
+	z-index: -4
+
+.arrow_down
+	margin-top: 50px
+	margin-left: 115px
+	img	
+		z-index: 1	
+		width: 65px		
+		border-radius: 50%		
+	img:hover
+		background-color: $flagshover
+	img:active
+		background-color: darken($flagshover, 10%)
+
+.features	
+	margin-top: 100px
+	margin-left: 120px
+	div
+		margin-bottom: 55px
+		margin-left: 20px
+		width: 25%
+	a 
+		text-decoration: none
+	img 
+		width: 35px	
+	.fast_o
+		width: 27px
+	.save_and_sec
+		width: 27px	
+	p
+		padding-top: 5px
+		font-weight: normal
+		text-transform: uppercase
+		color: $textcolor
+		font-size: 12px
+.how_we_work
+	font-weight: bolder
+	margin-top: 35px
+	color: rgba(69, 90, 200, 0.15)
+	font-size: 60px
+	line-height: 80px
+	text-transform: uppercase
+
+.c_migration
+	margin-top: 150px
+	&_h
+		margin-bottom: 40px
+		@include large-text
+	&_text
+		@include little-text
+
+.future
+	&_h
+		@include fade-text
+.second-block 
+	&_buttons 
+		text-transform: uppercase
+		font-family: "Aileron", sans-serif
+		a 			
+			font-size: 12px
+			font-weight: bolder
+			border-radius: 50px				
+			box-shadow: 0px 6px 7px rgba(100, 92, 112, 0.25)	
+		a:first-child 
+			padding: 25px 15px 25px 15px
+			background-color: #455AC8			
+		a:last-child
+			margin-left: 40px
+			padding: 25px 30px 25px 30px
+			background-color: #455AC8
+
+.cloud_subscr
+	margin-top: 200px
+
+.t365
+	@include fade-text
+	font-size: 270px
+	position: absolute
+	transform: rotate(90deg)	
+
+.cloud_subscr_text
+	margin-left: 50px
+	&_h
+		@include large-text
+	&_t
+		color: #645C70
+		text-transform: uppercase
+		font-size: 35px
+
+.cloud_subscr_buttons
+	margin-top: 70px
+	a
+		background-color: #fff
+		position: relative
+		margin-left: 45px
+		margin-bottom: 40px		
+		border-radius: 50px			
+		width: 270px
+		height: 270px	
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+		img 
+			padding-top: 40%
+			width: 230px
+
+.microsoft_dynamics
+	position: absolute
+	right: -50px
+	bottom: 45px
+	width: 370px !important
+.azure
+	position: absolute
+	left: 20px
+	top: -20px
+	width: 220px !important
+
+.surface_block_h
+	margin-top: 150px
+	@include large-text
+
+.surface_logo
+	width: 230px	
+	margin-left: 120px
+
+.surface_pc
+	width: 75%	
+	margin-left: 20px	
+
+.button_surface
+	background-color: #455AC8
+	margin: 40px auto 0 auto
+	padding: 25px 55px 25px 55px
+	border-radius: 50px
+	text-transform: uppercase
+	font-family: "Aileron", sans-serif
+	font-size: 12px
+	font-weight: bolder
+	box-shadow: 0px 6px 7px rgba(69, 90, 200, 0.25)
+
+.btn-primary:hover
+	background-color: #645C70 !important
+
+.btn-primary:active
+	background-color: darken(#645C70, 10%) !important
+
+.microsoft_licenses_h
+	@include large-text
+	margin-left: 50px
+	margin-top: 100px
+
+.microsoft_licenses_t
+	@include little-text
+	margin-left: 50px
+	margin-top: 50px
+
+.microsoft_license_button
+	margin: 90px auto 0 auto
+	a
+		background-color: #455AC8	
+		padding: 25px 60px 25px 60px
+		border-radius: 50px
+		text-transform: uppercase
+		font-family: "Aileron", sans-serif
+		font-size: 12px
+		font-weight: bolder
+		box-shadow: 0px 6px 7px rgba(69, 90, 200, 0.25)
+
+.microsoft_licenses_fade
+	@include fade-text
+	font-size: 60px
+
+.first, .second, .third, .fourth, .fifth
+	position: absolute	
+	z-index: -2
+	overflow: hidden !important
+
+.first
+	right: 0
+	top: 80px	
+	width: 130vh
+	z-index: -4
+
+.second
+	width: 820px	
+	top: 700px
+	right: 25vw
+
+.third
+	width: 870px
+	top: 1400px
+	right: 20vw	
+
+.fourth
+	width: 1200px
+	top: 2420px
+	left: 0vw	
+
+.fifth	
+	width: 800px
+	top: 3260px
+	right: 200px
+
+footer
+	margin-top: 150px
+	background-color: $blockcolor
+	h6, p, li
+		color: #fff
+		font-weight: lighter		
+	img 
+		width: 400px
+
+
+.microsoft_partner_t
+	margin-left: 25px	
+	font-size: 12px
+	font-weight: lighter
+
+.footer_contacts
+	margin-left: 70px
+	padding-top: 30px 
+	&_h
+		font-size: 12px
+	&_t
+		font-size: 10px
+
+.footer_questions
+	padding-top: 30px 
+	&_h
+		font-size: 12px
+	&_list
+		font-size: 10px
+		list-style: none
+
+.company_info	
+	padding-top: 30px 
+	&_h
+		font-size: 12px
+	&_list
+		font-size: 10px
+		list-style: none
+
+@import "media"
